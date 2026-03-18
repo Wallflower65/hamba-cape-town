@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+}
+
+.header {
+    background-color: #102a43;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.side-panel {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.side-panel h2 {
+    margin-top: 0;
+    color: #102a43;
+    font-size: 20px;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 10px;
+}
+
+.metric-card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.metric-card h3 {
+    margin: 0 0 15px 0;
+    color: #334155;
+    font-size: 16px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #475569;
+}
+
+.data-row strong {
+    color: #0f172a;
+    font-size: 16px;
+}
+
+.highlight {
+    color: #2680eb ;
+    font-size: 20px ;
+}
+
+.status-note {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#map {
+    flex: 2;
+    height: 60vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #cbd5e1;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #0f172a;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #2680eb;
+    box-shadow: 0 0 0 3px rgba(38, 128, 235, 0.2);
+}
+
+.primary-btn {
+    background-color: #2680eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #1a65c0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.footer strong {
+    color: #0f172a;
+}
+
+.footer-links {
+    margin-top: 8px;
+}
+
+.footer-links a {
+    color: #2680eb;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

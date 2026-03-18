@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Town Commuter Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>🚦 Cape Town Commuter Intelligence</h1>
+        <p>Live transit routing and congestion tracking</p>
+    </div>
+
+    <div class="dashboard-container">
+        
+        <div class="side-panel">
+            <h2>Live Commute Metrics</h2>
+            
+            <div class="control-group">
+                <label for="start-location"><strong>Starting Point:</strong></label>
+                <input type="text" id="start-location" placeholder="e.g., Bellville, Cape Town" value="Bellville, Cape Town">
+            </div>
+            
+            <div class="control-group">
+                <label for="end-location"><strong>Destination:</strong></label>
+                <input type="text" id="end-location" placeholder="e.g., V&A Waterfront" value="Cape Town CBD">
+            </div>
+
+            <button id="search-btn" class="primary-btn">Calculate Route</button>
+            
+            <div class="metric-card">
+                <h3 id="destination-title">📍 Route Overview</h3>
+                <div class="data-row">
+                    <span>Distance:</span>
+                    <strong id="distance-display">-- km</strong>
+                </div>
+                <div class="data-row">
+                    <span>Est. Travel Time:</span>
+                    <strong id="time-display" class="highlight">-- mins</strong>
+                </div>
+            </div>
+
+            <p class="status-note">🟢 Live data active. Route optimised for fastest travel time.</p>
+        </div>
+
+        <div id="map"></div>
+        
+    </div>
+
+    <div class="footer">
+        <p>Coded by <strong>Phaphamani Zoneleni</strong></p>
+        <div class="footer-links">
+            <a href="https://phaphamaniportfolio.netlify.app/ ">Portfolio</a> • <a href="https://github.com/Wallflower65 ">GitHub</a> • <a href="https://www.linkedin.com/in/phaphamanizoneleni-28181a20b">LinkedIn</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
