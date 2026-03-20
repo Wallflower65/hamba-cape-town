@@ -9,21 +9,23 @@ let currentRouteLayer = null;
 let startMarker = null;
 let destMarker = null;
 
-
 async function geocodeAddress(address) {
-    const query = `${address}, South Africa`;
-    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1`;
+  const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&countrycodes=za&limit=1`;
     
     try {
         const response = await fetch(url);
         const data = await response.json();
+        
+console.log(`Satellite data for "${address}":`, data);
+
         if (data && data.length > 0) {
             return { 
                 lat: parseFloat(data[0].lat), 
                 lng: parseFloat(data[0].lon), 
                 name: data[0].display_name.split(',')[0] 
+            };
         }
-        return null;
+        return null; 
     } catch (error) {
         console.error("Geocoding failed:", error);
         return null;
