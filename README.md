@@ -16,7 +16,7 @@ A dynamic travel routing web application designed specifically for navigating Ca
 
 ## 🚀 Live Demo
 
-Check out the live application here: [[Insert Live Link Here](https://hamba-cape-town.netlify.app/)]
+Check out the live application here: [(https://hamba-cape-town.netlify.app/)]
 
 ## 💻 Running the Project Locally
 
